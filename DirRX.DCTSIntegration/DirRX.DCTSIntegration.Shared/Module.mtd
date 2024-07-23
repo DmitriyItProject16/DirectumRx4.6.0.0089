@@ -1,0 +1,259 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "d5ac943a-3778-464b-a8b1-a2790e065a76",
+  "Name": "DCTSIntegration",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "2f92bac7-2f80-442d-b2f6-da4ba4d973f9",
+      "Name": "EntryExistingDocument",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "50272d4d-9b46-4bf6-b9f2-9ae298525522",
+          "Name": "TempDocId",
+          "ParameterType": "Integer"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "DirRX.DCTSIntegration.Client",
+  "ClientBaseAssemblyName": "DirRX.DCTSIntegration.ClientBase",
+  "ClientBaseNamespace": "DirRX.DCTSIntegration.ClientBase",
+  "ClientNamespace": "DirRX.DCTSIntegration.Client",
+  "Code": "DCTSInt",
+  "CompanyCode": "DirRX",
+  "Cover": {
+    "NameGuid": "e0594213-0841-433c-ab86-71f5ddea8a95",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "2343dd12-d7b3-4b71-bb98-5783b46f6e74",
+        "Name": "Action1",
+        "FunctionName": "Function2",
+        "GroupId": "c5ec7550-285a-4941-8b4a-e500d5b29c25",
+        "PreviousItemGuid": "7ef496e4-6e83-4a31-bd6f-d5aed0a5ff29"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "6aafbb48-147b-4485-9356-ac64968e8a2e",
+        "Name": "Reflection",
+        "FunctionName": "Reflection",
+        "GroupId": "c5ec7550-285a-4941-8b4a-e500d5b29c25",
+        "PreviousItemGuid": "2343dd12-d7b3-4b71-bb98-5783b46f6e74"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "7ef496e4-6e83-4a31-bd6f-d5aed0a5ff29",
+        "Name": "Action",
+        "FunctionName": "Function1",
+        "GroupId": "c5ec7550-285a-4941-8b4a-e500d5b29c25"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "dcdc6485-084b-4191-bbc0-a7696613f494",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "c5ec7550-285a-4941-8b4a-e500d5b29c25",
+        "Name": "Group",
+        "BackgroundPosition": "Stretch",
+        "TabId": "aa80c09f-144b-4f7c-92a6-e17c12e39dd1"
+      }
+    ],
+    "Header": {
+      "NameGuid": "60595e35-bdfb-4feb-bdcf-a38b10696f66",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": [
+      {
+        "NameGuid": "aa80c09f-144b-4f7c-92a6-e17c12e39dd1",
+        "Name": "Tab"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "17aba98e-3b49-4235-8535-c8bec1738556",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "92491aa6-c4df-4f46-a807-ebdd337bda74",
+      "MaxVersion": "",
+      "MinVersion": "1.1.0.0"
+    },
+    {
+      "Id": "ec7b606a-21ee-4f16-aba8-ab8c2af76d12",
+      "MaxVersion": "",
+      "MinVersion": "0.0.1.0"
+    },
+    {
+      "Id": "4e25caec-c722-4740-bcfd-c4f803840ac6",
+      "MaxVersion": "",
+      "MinVersion": "2.3.20.0"
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "2.3.20.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "4ae5791f-017c-4f17-a9f7-7921755a0be4"
+    },
+    {
+      "ItemId": "3d901ae7-d811-4342-af90-4599ce378045",
+      "PreviousItemId": "4ae5791f-017c-4f17-a9f7-7921755a0be4"
+    },
+    {
+      "ItemId": "d466a2da-e10a-456c-90b1-5c8a914cb4c6",
+      "PreviousItemId": "3d901ae7-d811-4342-af90-4599ce378045"
+    },
+    {
+      "ItemId": "e99a382b-b0b8-47a4-bda5-727c6fcdae6e",
+      "PreviousItemId": "d466a2da-e10a-456c-90b1-5c8a914cb4c6"
+    },
+    {
+      "ItemId": "cb58e4c8-c8ec-41de-b8dd-0aca330afa65",
+      "PreviousItemId": "e99a382b-b0b8-47a4-bda5-727c6fcdae6e"
+    },
+    {
+      "ItemId": "18dcd1bd-348c-4bf7-8421-0b9797e903a9",
+      "PreviousItemId": "cb58e4c8-c8ec-41de-b8dd-0aca330afa65"
+    },
+    {
+      "ItemId": "f7e5f0ad-9c6b-496e-8c0a-66ae1b19feba",
+      "PreviousItemId": "18dcd1bd-348c-4bf7-8421-0b9797e903a9"
+    },
+    {
+      "ItemId": "440fa70f-f7ac-450d-ad75-62940a59d6aa",
+      "PreviousItemId": "f7e5f0ad-9c6b-496e-8c0a-66ae1b19feba"
+    },
+    {
+      "ItemId": "5a9fd670-c6c0-4d9e-85ca-3757e9199bc7",
+      "PreviousItemId": "440fa70f-f7ac-450d-ad75-62940a59d6aa"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Low",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "DirRX.DCTSIntegration",
+  "IsolatedAssemblyName": "DirRX.DCTSIntegration.Isolated",
+  "IsolatedNamespace": "DirRX.DCTSIntegration.Isolated",
+  "IsVisible": false,
+  "Overridden": [
+    "Importance",
+    "IsVisible"
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "ProcessingDCTSKit",
+      "Parameters": [
+        {
+          "Name": "lineSender",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "instanceInfos",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "deviceInfo",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "inputFiles",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "filesBase64",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.String>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "filesName",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.String>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void",
+      "WebApiRequestType": "Post"
+    }
+  ],
+  "PublicStructures": [
+    {
+      "Name": "DocumentPackage",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "FileBase64",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "FileName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "DirRX.DCTSIntegration.Structures.Module"
+    }
+  ],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "DirRX.DCTSIntegration",
+  "ResourcesKeys": [
+    "SubjectSimpleTaskDCTS",
+    "ActiveTextSimpleTaskDCTS",
+    "SubjectApprovalTaskDCTS",
+    "FileNotFoundTemplate",
+    "ProcessingRuleNotFound",
+    "MultilpleProcessingRuleFound",
+    "CustomConfigSettings",
+    "ServerBarcodeRecognition",
+    "DefaultServerBarcode",
+    "DepartmentSampleName",
+    "Correspondent",
+    "IncommingLetterRuleName",
+    "MailLineToSystem",
+    "LetterTaskSubject",
+    "FaxRuleName",
+    "FaxLineToSystem",
+    "DocumentTaskSubject",
+    "ScanRuleName",
+    "ScanLineToSystem",
+    "ReturnRuleName",
+    "NamePattern",
+    "NotFoundTemporaryDoc"
+  ],
+  "ServerAssemblyName": "DirRX.DCTSIntegration.Server",
+  "ServerNamespace": "DirRX.DCTSIntegration.Server",
+  "SharedAssemblyName": "DirRX.DCTSIntegration.Shared",
+  "SharedNamespace": "DirRX.DCTSIntegration.Shared",
+  "SpecialFolders": [],
+  "Version": "4.0.4634.1",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

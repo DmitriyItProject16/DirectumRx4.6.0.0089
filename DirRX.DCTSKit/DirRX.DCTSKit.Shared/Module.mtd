@@ -1,0 +1,69 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "17aba98e-3b49-4235-8535-c8bec1738556",
+  "Name": "DCTSKit",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "DirRX.DCTSKit.Client",
+  "ClientBaseAssemblyName": "DirRX.DCTSKit.ClientBase",
+  "ClientBaseNamespace": "DirRX.DCTSKit.ClientBase",
+  "ClientNamespace": "DirRX.DCTSKit.Client",
+  "Code": "DCTSKit",
+  "CompanyCode": "DirRX",
+  "Cover": {
+    "NameGuid": "0d8674c6-397c-4205-83f4-bfe40f27a323",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "ffdae819-1362-4c60-9bff-37f9d81eeb4c",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "0ae4ad68-16e2-48be-a21e-67460d25b14a",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "ea1582b3-d663-4976-b6da-ec0abf85012b"
+    },
+    {
+      "ItemId": "a3880045-eb55-403e-8bff-330410e7b370",
+      "PreviousItemId": "ea1582b3-d663-4976-b6da-ec0abf85012b"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "DirRX.DCTSKit",
+  "IsolatedAssemblyName": "DirRX.DCTSKit.Isolated",
+  "IsolatedNamespace": "DirRX.DCTSKit.Isolated",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "DirRX.DCTSKit",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "DirRX.DCTSKit.Server",
+  "ServerNamespace": "DirRX.DCTSKit.Server",
+  "SharedAssemblyName": "DirRX.DCTSKit.Shared",
+  "SharedNamespace": "DirRX.DCTSKit.Shared",
+  "SpecialFolders": [],
+  "Version": "4.0.4634.1",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

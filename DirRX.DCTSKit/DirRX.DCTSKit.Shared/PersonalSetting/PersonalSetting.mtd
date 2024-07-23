@@ -1,0 +1,151 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "a3880045-eb55-403e-8bff-330410e7b370",
+  "Name": "PersonalSetting",
+  "BaseGuid": "edabdc0e-13d1-45e0-82a8-e60a5ea5bf68",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.InplaceFormMetadata, Sungero.Metadata",
+      "NameGuid": "351f825a-fa66-490f-b915-9b127cb9d4a6",
+      "Name": "BarcodeDirRX",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "e194a672-93ff-4330-94ab-82f1305281a9",
+          "Name": "ControlGroupDirRX"
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "22c12c36-e0ef-40c6-96ff-b6205b777d59",
+          "Name": "UserDirRX",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "HeaderLocation": "None",
+          "ParentGuid": "e194a672-93ff-4330-94ab-82f1305281a9",
+          "PropertyGuid": "bb1a7838-ef8d-43f2-b7ee-e62d6c09e452",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "cd78a053-e011-4612-ada7-97f16c5d90a2",
+          "Name": "PrintDirRX",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "GroupType": "WithTitleNoBorder",
+          "ParentGuid": "e194a672-93ff-4330-94ab-82f1305281a9",
+          "RowNumber": 1,
+          "RowSpan": 1
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "5afc66d4-0cae-4ef5-882d-b951fafe04b6",
+          "Name": "PrintMethodDirRX",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+          "ParentGuid": "cd78a053-e011-4612-ada7-97f16c5d90a2",
+          "PropertyGuid": "a1b93f91-492d-4afc-ac3b-e86fa6e04ba7",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "cb078ea3-9f6d-432f-b1ef-9da2fe949e55",
+          "Name": "DefaultPrinterDirRX",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "cd78a053-e011-4612-ada7-97f16c5d90a2",
+          "PropertyGuid": "3b2ff9a9-c7e1-4c69-b6e6-3db17e095d1e",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ],
+      "ParentFormGuid": "f6583fe5-1ec4-4519-aa54-08541b27ebca",
+      "PreviousInplaceFormGuid": "e895b7fb-aa5a-410e-b7a4-a01acee8ea39"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "LayeredFromGuid": "edabdc0e-13d1-45e0-82a8-e60a5ea5bf68",
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a1b93f91-492d-4afc-ac3b-e86fa6e04ba7",
+      "Name": "BarcodePrintMethodDirRX",
+      "Code": "BarcodePrintMe",
+      "DirectValues": [
+        {
+          "NameGuid": "5d9a3c60-cd6e-42c6-9ea3-b9f4e535a457",
+          "Name": "ManualDirRX",
+          "Code": "ManualDirRX"
+        },
+        {
+          "NameGuid": "68d24a1c-fdb5-450d-afde-5241a29d04a2",
+          "Name": "AutomaticDirRX",
+          "Code": "AutomaticDirRX"
+        }
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+      "PreviousPropertyGuid": "ac718f00-d0bf-420a-bb18-df109904d74f"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "3b2ff9a9-c7e1-4c69-b6e6-3db17e095d1e",
+      "Name": "BarcodePrinterDirRX",
+      "Code": "BarcodePrinter",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "a1b93f91-492d-4afc-ac3b-e86fa6e04ba7"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "68672cbb-64e5-46c7-a1b2-30bfc9ca956d",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "f586fd96-4f53-4107-80f4-c97ae1c5dd14",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 11
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 2
+    }
+  ]
+}

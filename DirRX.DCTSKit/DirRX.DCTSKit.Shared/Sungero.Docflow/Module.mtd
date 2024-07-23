@@ -1,0 +1,458 @@
+{
+  "$type": "Sungero.Metadata.LayerModuleMetadata, Sungero.Metadata",
+  "NameGuid": "506c4088-7442-4204-80f5-85d88f7c29b5",
+  "Name": "Docflow",
+  "AssociatedGuid": "17aba98e-3b49-4235-8535-c8bec1738556",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "1789c9a0-c48c-4a00-8d0e-fdc2a9c274a8",
+      "Name": "ClearAccessRightsRuleState",
+      "DelayPeriod": 15,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "5c69d42e-2a65-40a5-8fb8-508e7c0c6b2e",
+          "Name": "RuleId",
+          "ParameterType": "Integer"
+        }
+      ]
+    },
+    {
+      "NameGuid": "dd7a5d44-7c4e-41bc-97b6-957f45a4f8c2",
+      "Name": "CompareDocuments",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "10387b94-21d8-41a4-ad00-2842c53d57ac",
+          "Name": "ComparisonInfoId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "22243d0c-0ffd-49fa-bf46-aedf7c8ef6bc",
+          "Name": "ProcessingStartTime",
+          "ParameterType": "DateTime"
+        }
+      ]
+    },
+    {
+      "NameGuid": "e243048a-0320-4bb6-b9b0-b3e1b1c1770f",
+      "Name": "GrantAccessRightsToDocumentsBulk",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "13cdd20b-a00a-45f8-ab81-4f7b387e22d0",
+          "Name": "RuleId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "3e31932c-fe59-47ab-a381-e4e8b06a740a",
+          "Name": "DocumentIds",
+          "ParameterType": "String"
+        }
+      ]
+    },
+    {
+      "NameGuid": "3e3240a6-f984-406f-a2e5-79467cb926ea",
+      "Name": "AddRegistrationStamp",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "39919c36-08e7-4812-a86f-809a1503876d",
+          "Name": "BottomIndent",
+          "ParameterType": "Double"
+        },
+        {
+          "NameGuid": "441814f1-ea00-48fe-8401-385359d274e3",
+          "Name": "RightIndent",
+          "ParameterType": "Double"
+        },
+        {
+          "NameGuid": "73348e23-17f3-4845-8be2-1380dd989814",
+          "Name": "VersionId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "d82a50f3-ad3f-4bc4-9362-d7ae6f6e41a9",
+          "Name": "DocumentId",
+          "ParameterType": "Integer"
+        }
+      ]
+    },
+    {
+      "NameGuid": "0dafb1e3-1520-40a8-ab6e-09deeae72e8f",
+      "Name": "ExecuteApprovalFunction",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "91638f41-9665-4a31-a53d-4114bafd2b73",
+          "Name": "QueueItemId",
+          "ParameterType": "Integer"
+        }
+      ]
+    },
+    {
+      "NameGuid": "1a9bf2e4-4778-4fdb-8edc-1f8b5777416b",
+      "Name": "SetDocumentStateAborted",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "6597716e-fdf4-45c3-b01e-7726def8c1a0",
+          "Name": "AbortedDate",
+          "ParameterType": "DateTime"
+        },
+        {
+          "NameGuid": "90d8e41c-4e39-460b-8727-69b4b124e3d1",
+          "Name": "TaskId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "a11d163d-9758-491f-acd4-e3e5254e9bdc",
+          "Name": "NeedSetState",
+          "ParameterType": "Boolean"
+        },
+        {
+          "NameGuid": "d2640167-7fe0-4455-a17e-21f715194c65",
+          "Name": "SetObsolete",
+          "ParameterType": "Boolean"
+        },
+        {
+          "NameGuid": "d61f9488-0855-48be-a6f1-085d4c55d856",
+          "Name": "NeedGrantAccessRightsOnDocument",
+          "ParameterType": "Boolean"
+        }
+      ]
+    },
+    {
+      "NameGuid": "accf7175-912e-48e7-aa12-c7288559f709",
+      "Name": "CopyCaseFiles",
+      "DelayPeriod": 60,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "067cd598-3573-47b0-9094-5724ab542514",
+          "Name": "SourcePeriodStartDate",
+          "ParameterType": "DateTime"
+        },
+        {
+          "NameGuid": "0d05253f-a3e3-455c-bbb6-86ce8ee5f2ef",
+          "Name": "TargetPeriodEndDate",
+          "ParameterType": "DateTime"
+        },
+        {
+          "NameGuid": "93f3646b-89a6-4497-bd71-75eea6180fef",
+          "Name": "BusinessUnitId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "9cc0deea-5879-45c4-bffe-14c033a7ed1f",
+          "Name": "TargetPeriodStartDate",
+          "ParameterType": "DateTime"
+        },
+        {
+          "NameGuid": "9eb0601e-26c1-4958-9500-1fc173ff9d9c",
+          "Name": "SourcePeriodEndDate",
+          "ParameterType": "DateTime"
+        },
+        {
+          "NameGuid": "cf3fa5fb-ad05-47dd-8a90-0b759a486eec",
+          "Name": "DepartmentId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "f0ec8930-8203-403d-b403-b1011c3017b5",
+          "Name": "UserId",
+          "ParameterType": "Integer"
+        }
+      ]
+    },
+    {
+      "NameGuid": "a416fcc6-b361-48de-a665-d19de3c5379d",
+      "Name": "ConvertDocumentToPdf",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "4e5da2d1-cc60-4ca6-908e-28338a72c3f9",
+          "Name": "UserId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "a24c08e5-19cb-48ed-8b64-54fb429dc2cf",
+          "Name": "VersionId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "bafcd04d-1721-4fe0-a72d-7acbc7bfc61f",
+          "Name": "DocumentId",
+          "ParameterType": "Integer"
+        }
+      ]
+    },
+    {
+      "NameGuid": "4f03b0d0-f0f5-45ed-b1c5-98d32b864503",
+      "Name": "SetDocumentStorage",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "56bf2d12-f4b0-4e00-aa92-3f367f7414f7",
+          "Name": "DocumentId",
+          "ParameterType": "Integer",
+          "Versions": []
+        },
+        {
+          "NameGuid": "900ec044-ba5f-4430-ad72-24f1f0c2a179",
+          "Name": "StorageId",
+          "ParameterType": "Integer",
+          "Versions": []
+        }
+      ],
+      "Versions": []
+    },
+    {
+      "NameGuid": "767ae28b-d043-48b3-9e31-e54c288bde75",
+      "Name": "GrantAccessRightsToDocument",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "3550f9bd-0a70-466e-89d5-2cd36937fdae",
+          "Name": "GrantRightToChildDocuments",
+          "ParameterType": "Boolean"
+        },
+        {
+          "NameGuid": "8662147d-aa1b-487f-a10a-9330afa44cd4",
+          "Name": "RuleId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "efc64fb9-dd5a-4c42-8fdd-dac020f496bb",
+          "Name": "DocumentId",
+          "ParameterType": "Integer"
+        }
+      ]
+    },
+    {
+      "NameGuid": "c4352760-6439-484b-9e00-6c878427d64e",
+      "Name": "GrantAccessRightsToDocumentsByRule",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "84b31876-37ad-485a-9aa3-8b4e3071f980",
+          "Name": "RuleId",
+          "ParameterType": "Integer"
+        }
+      ]
+    }
+  ],
+  "BaseGuid": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+  "ClientBaseAssemblyName": "DirRX.DCTSKit.ClientBase",
+  "ClientBaseNamespace": "DirRX.DCTSKit.Module.Docflow.ClientBase",
+  "Code": "Docflow",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "1125bc9f-b2d0-4461-96fc-540fc56ce158",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "01aaf489-8c9c-451e-b125-98782db7b652",
+        "Name": "ProcessingRuleDirRX",
+        "EntityTypeId": "4ae5791f-017c-4f17-a9f7-7921755a0be4",
+        "GroupId": "19e3f962-9f24-4242-9626-f897180bfdcb"
+      }
+    ],
+    "Groups": [
+      {
+        "NameGuid": "0da8db16-0312-4a67-9bdd-e76e309f7f85",
+        "Name": "SmartProcessingSettings",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSmartProcessingSettings_0da8db1603124a679bdde76e309f7f85.png",
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "PreviousItemGuid"
+        ],
+        "PreviousItemGuid": "2832d02d-6c46-42cd-84b3-35dc867d8539",
+        "TabId": "f5658d54-f782-4570-9a47-e7b7421f6853",
+        "Versions": []
+      },
+      {
+        "NameGuid": "a45c2480-9775-4f34-a8f2-aa91c233d04f",
+        "Name": "Docflow",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDocflow_a45c248097754f34a8f2aa91c233d04f.png",
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "PreviousItemGuid"
+        ],
+        "PreviousItemGuid": "bf7ec0bf-a0cd-4390-8e20-4071d2745ac9",
+        "TabId": "f5658d54-f782-4570-9a47-e7b7421f6853"
+      },
+      {
+        "NameGuid": "23d239d0-8f2c-49ba-975e-559a554b96d7",
+        "Name": "RetentionDocument",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconRetentionDocument_23d239d08f2c49ba975e559a554b96d7.png",
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "PreviousItemGuid"
+        ],
+        "PreviousItemGuid": "a45c2480-9775-4f34-a8f2-aa91c233d04f",
+        "TabId": "f5658d54-f782-4570-9a47-e7b7421f6853"
+      },
+      {
+        "NameGuid": "ef0cb40d-3c65-405a-a295-9ac170813fad",
+        "Name": "Registration",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconRegistration_ef0cb40d3c65405aa2959ac170813fad.png",
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "PreviousItemGuid"
+        ],
+        "PreviousItemGuid": "23d239d0-8f2c-49ba-975e-559a554b96d7",
+        "TabId": "f5658d54-f782-4570-9a47-e7b7421f6853"
+      },
+      {
+        "NameGuid": "19e3f962-9f24-4242-9626-f897180bfdcb",
+        "Name": "DCTSDirRX",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDCTSDirRX_19e3f9629f2442429626f897180bfdcb.ico",
+        "PreviousItemGuid": "8676ae40-d291-4845-8270-8cccbe9b8ba7",
+        "TabId": "f5658d54-f782-4570-9a47-e7b7421f6853"
+      },
+      {
+        "NameGuid": "2832d02d-6c46-42cd-84b3-35dc867d8539",
+        "Name": "ApplicationSettings",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconApplicationSettings_2832d02d6c4642cd84b335dc867d8539.png",
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "PreviousItemGuid"
+        ],
+        "PreviousItemGuid": "19e3f962-9f24-4242-9626-f897180bfdcb",
+        "TabId": "f5658d54-f782-4570-9a47-e7b7421f6853"
+      },
+      {
+        "NameGuid": "8676ae40-d291-4845-8270-8cccbe9b8ba7",
+        "Name": "Approval",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconApproval_8676ae40d291484582708cccbe9b8ba7.png",
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "PreviousItemGuid"
+        ],
+        "PreviousItemGuid": "ef0cb40d-3c65-405a-a295-9ac170813fad",
+        "TabId": "f5658d54-f782-4570-9a47-e7b7421f6853"
+      },
+      {
+        "NameGuid": "f177d1e6-2cc0-4f87-a2a0-403c1f839691",
+        "Name": "Group",
+        "BackgroundPosition": "Stretch",
+        "IsAncestorMetadata": true,
+        "IsVisible": false,
+        "Overridden": [
+          "PreviousItemGuid",
+          "IsVisible"
+        ],
+        "PreviousItemGuid": "0da8db16-0312-4a67-9bdd-e76e309f7f85",
+        "TabId": "f5658d54-f782-4570-9a47-e7b7421f6853"
+      }
+    ],
+    "IsAncestorMetadata": true,
+    "Overridden": [
+      "Actions",
+      "Groups",
+      "Tabs"
+    ],
+    "Tabs": []
+  },
+  "ExplorerTreeOrder": [],
+  "IconResourcesKeys": [],
+  "Importance": "Low",
+  "IsolatedAreas": [],
+  "Jobs": [
+    {
+      "NameGuid": "622cfeba-32e5-4bd0-a85f-f216afe0c210",
+      "Name": "GrantAccessRightsToDocuments",
+      "Daily": "Repeat",
+      "IsAncestorMetadata": true,
+      "MonthSchedule": "Monthly",
+      "TimePeriod": 10
+    },
+    {
+      "NameGuid": "3069c638-bc15-4cba-bd4d-2d0dca77906d",
+      "Name": "DeleteComparisonInfos",
+      "IsAncestorMetadata": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T01:00:00"
+    },
+    {
+      "NameGuid": "35ba6be5-acff-4551-9f4d-48f0c7bb6419",
+      "Name": "SendSummaryMailNotifications",
+      "IsAncestorMetadata": true,
+      "Monthly": "WorkingDays",
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T07:00:00"
+    },
+    {
+      "NameGuid": "2ff6172c-7964-4df7-a294-88c77bc97ef2",
+      "Name": "SendNotificationForExpiringPowerOfAttorney",
+      "IsAncestorMetadata": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T06:00:00",
+      "Versions": []
+    },
+    {
+      "NameGuid": "0df1dbd4-8cd1-407d-90ba-537a251d4f7c",
+      "Name": "TransferDocumentsByStoragePolicy",
+      "IsAncestorMetadata": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T04:00:00",
+      "Versions": []
+    },
+    {
+      "NameGuid": "d7044e44-89bc-4fb3-9e44-5491514d9b05",
+      "Name": "SendMailNotification",
+      "Daily": "Repeat",
+      "IsAncestorMetadata": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T00:00:00",
+      "TimePeriod": 30
+    }
+  ],
+  "LayeredFromGuid": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+  "NeedResetAppliedCache": true,
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Sungero.Docflow",
+  "ResourcesKeys": [],
+  "SpecialFolders": [],
+  "Version": "4.6.34.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "LayerModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    }
+  ]
+}

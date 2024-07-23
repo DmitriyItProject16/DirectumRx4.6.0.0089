@@ -1,0 +1,27 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "5a9fd670-c6c0-4d9e-85ca-3757e9199bc7",
+  "Name": "BarcodePageReport",
+  "AssociatedGuid": "d5ac943a-3778-464b-a8b1-a2790e065a76",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Word",
+  "ExportFormats": [
+    "Word"
+  ],
+  "Overridden": [
+    "Parameters",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "DisplayName"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "096c51f2-efb2-4a96-a68c-8cd4f920e2f8",
+      "Name": "barcode",
+      "InternalDataTypeName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "Versions": []
+}
